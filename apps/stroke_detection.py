@@ -27,7 +27,7 @@ with st.spinner('Loading Model Into Memory...'):
 def app():
     st.title("""Stroke LVO Web Application Chulalongkorn University""")
     # Create header explaination
-    my_expander = st.beta_expander("See explanation", expanded = False)
+    my_expander = st.expander("See explanation", expanded = False)
     with my_expander:
             st.write("""
                  This web-apps detects a CT-brain image is normal or abnormal (with signs of stroke) using backend AI engine.
