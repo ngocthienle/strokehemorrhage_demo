@@ -18,7 +18,7 @@ from tensorflow.keras.applications.vgg19 import VGG19, preprocess_input as vgg19
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model("D:\OneDrive\streamlitprojects\strokeapps\multi_page_app\\aimodels\strokedata3_model_vgg19_29August2021.h5")
+    model = tf.keras.models.load_model("aimodels/strokedata3_model_vgg19_29August2021.h5")
     return model
 
 with st.spinner('Loading Model Into Memory...'):
@@ -34,7 +34,7 @@ def app():
                  The trained AI engine is based on the pre-trained VGG19 deep learning model.
                      """)
             st.write(""" The abnormal regions (e.g.: Intracerebral haemorrhage, Subarachnoid haemorrhage) are not the same though center brain layer, top brain layer, and eyeball brain layer.""")
-            image = Image.open('D:\OneDrive\streamlitprojects\strokeapps\example_pics.jpg')
+            image = Image.open('example_pics.jpg')
             st.image(image,caption='Example CT-brain images. Source of these images from CQ500 publish dataset (http://headctstudy.qure.ai/dataset)')
                 
     st.subheader('Choose a CT-brain image and get the detection')
