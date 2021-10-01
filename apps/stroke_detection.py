@@ -25,7 +25,9 @@ with st.spinner('Loading Model Into Memory...'):
     model = load_model()
 
 def app():
-    st.title("""CT-Brain Image Abnormal Detection Chulalongkorn University""")
+    image = Image.open('D:\OneDrive\streamlitprojects\strokeapps\multi_page_app\chula_logo.png')
+    st.image(image)
+    st.title("""CT-Brain Image Abnormal Detection""")
     # Create header explaination
     my_expander = st.expander("See explanation", expanded = False)
     with my_expander:
