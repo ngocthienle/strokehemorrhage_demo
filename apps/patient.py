@@ -10,6 +10,8 @@ import numpy as np
 import pandas as pd
 
 def app():
+    image = Image.open('chula_logo.png')
+    st.image(image)
     st.title("""Stroke Patient Record Chulalongkorn University""")
     
     # Using the "with" syntax
