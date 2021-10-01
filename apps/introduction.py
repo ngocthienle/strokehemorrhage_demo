@@ -9,7 +9,7 @@ import streamlit as st
 from PIL import Image
 
 def app():
-    image = Image.open('D:\OneDrive\streamlitprojects\strokeapps\multi_page_app\chula_logo.png')
+    image = Image.open('chula_logo.png')
     st.image(image)
 
     st.title("""Development of a Communication System for Treatment and Rehabilitation of Stroke Patients""")
@@ -19,7 +19,7 @@ def app():
     st.write("- Clinical correlation for stroke and large-vessel occlusion detection")
     
     expander_faq = st.expander("More About The Project")
-    expander_faq.write("Hi there! If you have any questions about our project, please contact:")
+    expander_faq.write("Thank you for visiting! If you have any questions about our project, please contact:")
     expander_faq.write("Professor Dr. Watit Benjapolakul: watit.b@chula.ac.th")
 
     
