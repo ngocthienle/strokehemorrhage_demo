@@ -13,7 +13,7 @@ from PIL import Image
 def app():
     image = Image.open('chula_logo.png')
     st.image(image)
-    st.title("""Stroke Patient Record Chulalongkorn University""")
+    st.title("""Stroke Patient Record""")
     
     # Using the "with" syntax
     with st.form(key='Patient_characteristics'):
