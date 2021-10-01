@@ -13,7 +13,7 @@ import numpy as np
 import cv2
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.vgg19 import VGG19, preprocess_input as vgg19_preprocess_input
+from tensorflow.keras.applications.vgg19 import preprocess_input as vgg19_preprocess_input
 
 
 @st.cache(allow_output_mutation=True)
@@ -25,7 +25,7 @@ with st.spinner('Loading Model Into Memory...'):
     model = load_model()
 
 def app():
-    image = Image.open('D:\OneDrive\streamlitprojects\strokeapps\multi_page_app\chula_logo.png')
+    image = Image.open('chula_logo.png')
     st.image(image)
     st.title("""CT-Brain Image Abnormal Detection""")
     # Create header explaination
