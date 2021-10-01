@@ -6,7 +6,7 @@ The multi-page web application for stroke project- Chula
 """
 import streamlit as st
 from PIL import Image
-logo_image = Image.open('D:\OneDrive\streamlitprojects\strokeapps/logo.png')
+logo_image = Image.open('logo.png')
 
 st.set_page_config(layout="centered", page_title='Stroke Application',
                    page_icon=logo_image)
