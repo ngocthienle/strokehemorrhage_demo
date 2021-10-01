@@ -8,6 +8,7 @@ Created on Sat Sep 11 11:53:34 2021
 import streamlit as st
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 def app():
     image = Image.open('chula_logo.png')
