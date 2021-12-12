@@ -9,7 +9,7 @@ Date: September 30, 2021
 # Import libraries
 import cv2
 import streamlit as st
-
+from PIL import Image
 
 def app():
     image = Image.open('chula_logo.png')
