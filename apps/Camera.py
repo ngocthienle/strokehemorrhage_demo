@@ -14,6 +14,7 @@ from PIL import Image
 def app():
     image = Image.open('chula_logo.png')
     st.image(image)
+    
     st.title("""Video Stroke Rehabilitation Monitoring""")
     st.write(" ------ ")
     st.write("This apps allows user upload the after-stroke rehabilitation video to evaluate the corrected exercises.")
