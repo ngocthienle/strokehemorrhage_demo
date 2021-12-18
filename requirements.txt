@@ -3,6 +3,4 @@ pandas
 opencv-python-headless
 streamlit
 tensorflow
-requests
-tqdm
 mediapipe
