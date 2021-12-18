@@ -14,13 +14,18 @@ def app():
 
     st.title("""Development of a Communication System for Treatment and Rehabilitation of Stroke Patients""")
     st.write(" ------ ")
-    st.subheader("""Objective""")
-    st.write("- Build an AI model that can identify the abnormal regions through many layers of brain: Size, Shape, Location")
-    st.write("- Clinical correlation for stroke and large-vessel occlusion detection")
-    
-    expander_faq = st.expander("More About The Project")
-    expander_faq.write("Thank you for visiting! If you have any questions about our project, please contact:")
-    expander_faq.write("Professor Dr. Watit Benjapolakul: watit.b@chula.ac.th")
+    st.subheader("""Video Meeting""")
+    st.markdown("""
+        <style>
+        .big-font {
+            font-size:20px !important;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+    st.markdown('<p class="big-font">Please click to the link below to set up a video meeting.</p>',
+                unsafe_allow_html=True)
+    link = "[Video Meeting](https://chulastrokeconference.netlify.app/)"
+    st.markdown(link, unsafe_allow_html=True)
 
     
     

@@ -11,19 +11,20 @@ logo_image = Image.open('logo.png')
 st.set_page_config(layout="centered", page_title='Stroke Application',
                    page_icon=logo_image)
 from multiapp import MultiApp
-from apps import stroke_detection, patient, introduction, multi_stroke_detection, video, Camera  # Import the app modules want here.
+from apps import stroke_detection, patient, introduction, multi_stroke_detection, video, webcam, hand  # Import the app modules want here.
 
 
 app = MultiApp()
 
 
 # Add all your application here
-app.add_app("Introduction", introduction.app)
+app.add_app("Video Meeting", introduction.app)
 app.add_app("Patient Record", patient.app)
-app.add_app("Single CT Detection", stroke_detection.app)
-app.add_app("Multiple CTs Detection", multi_stroke_detection.app)
-app.add_app("Rehabilitation Monitoring", video.app)
-app.add_app("Rehabilitation Camera", Camera.app)
+app.add_app("Single CT Examination", stroke_detection.app)
+app.add_app("Multiple CTs Examination", multi_stroke_detection.app)
+app.add_app("Video Monitoring", video.app)
+app.add_app("Face Tracking", webcam.app)
+app.add_app("Hand Tracking", hand.app)
 
 # The main app
 app.run()
