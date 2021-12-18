@@ -56,7 +56,7 @@ def app():
                 6: 'Normal at top brain layer.',  # nonehge_top
                 }
     ###
-    st.subheader('Choose a CT-brain image and get the detection')
+    st.subheader('Choose CT-brain images and get the detection')
     # Allow multiple images uploading
     uploaded_files = st.file_uploader("Choose CT-brain images", type=["jpg", "png"], accept_multiple_files=True)
     if uploaded_files is not None:
