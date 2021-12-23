@@ -18,8 +18,8 @@ app = MultiApp()
 
 
 # Add all your application here
-app.add_app("Video Meeting", introduction.app)
 app.add_app("Patient Record", patient.app)
+app.add_app("Video Meeting", introduction.app)
 app.add_app("Single CT Examination", stroke_detection.app)
 app.add_app("Multiple CTs Examination", multi_stroke_detection.app)
 app.add_app("Video Monitoring", video.app)
