@@ -11,7 +11,7 @@ import datetime
 
 
 def app():
-    image = Image.open(chula_logo.png')
+    image = Image.open('chula_logo.png')
     st.image(image)
     today = datetime.date.today()
 
