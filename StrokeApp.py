@@ -10,6 +10,14 @@ logo_image = Image.open('logo.png')
 
 st.set_page_config(layout="centered", page_title='Stroke Application',
                    page_icon=logo_image)
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 from multiapp import MultiApp
 from apps import stroke_detection, patient, introduction, multi_stroke_detection, video, webcam, hand  # Import the app modules want here.
 
