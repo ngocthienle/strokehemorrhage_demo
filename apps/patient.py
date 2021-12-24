@@ -262,7 +262,7 @@ def app():
         col57.checkbox('Yes')
         col58.checkbox('No')
 
-        st.markdown('<p class="big-font">Contraindication for Intravenous thrombolysis</p>',
+        st.markdown('<p class="big-font">Current medications</p>',
                     unsafe_allow_html=True)
         col59, col60, col61, col62, col63 = st.columns(5)
         col59.checkbox('Antiplatelet')
