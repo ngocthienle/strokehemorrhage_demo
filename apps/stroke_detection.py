@@ -5,12 +5,12 @@ Created on Sat Sep 11 11:54:08 2021
 @author: thienle
 """
 # Import libraries
+import cv2
 import streamlit as st
 from PIL import Image
 import pandas as pd
 import numpy as np
 
-import cv2
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.vgg19 import preprocess_input as vgg19_preprocess_input
